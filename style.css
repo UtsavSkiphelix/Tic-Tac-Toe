@@ -1,0 +1,72 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #dab49d;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  color: #f3e9dc;
+  font-size: 3rem;
+  font-family: cursive;
+  font-weight: 400;
+}
+
+.board {
+  display: grid;
+  background: #f3e9dc;
+  width: 96%;
+  max-width: 600px;
+  margin: 2rem;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.6rem;
+}
+
+.board > div {
+  aspect-ratio: 1;
+  background: #dab49d;
+  font-size: 3.5rem;
+  font-weight: 500;
+  font-family: cursive;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #f3e9dc;
+}
+
+.win {
+  display: none;
+  background: #f3e9dc;
+  width: 100%;
+  max-width: 600px;
+  aspect-ratio: 1;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  flex-direction: column;
+  color: #dab49d;
+}
+
+.win .winner {
+  font-family: cursive;
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.win > .btn {
+  font-family: cursive;
+  padding: 0.7rem 1.5rem;
+  background: #dab49d;
+  color: #f3e9dc;
+  border-radius: 3rem;
+  border-color: transparent;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
